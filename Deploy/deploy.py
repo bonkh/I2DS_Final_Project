@@ -6,7 +6,8 @@ import os
 
 class ApartmentPricePredictor:
     def __init__(self, model_path):
-        self.model = joblib.load(model_path)
+        path = os.path.dirname(__file__)
+        self.model = joblib.load(path + '/' + model_path)
 
     def predict_for_sale(self, data):
         return self.model.predict(data)
