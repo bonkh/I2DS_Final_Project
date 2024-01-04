@@ -21,12 +21,23 @@ def main():
     st.header("Select some features")
 
     type = st.selectbox("**Type**", ('For sale', 'For rent'))
-    district_list = ['District 1',
-                    'District 10', 'District 11', 'District 12', 'District 2', 'District 3',
-                    'District 4', 'District 5', 'District 6', 'District 7', 'District 8',
-                    'District 9', 'Bình Chánh District', 'Bình Thạnh District', 'Bình Tân District', 
-                    'Gò Vấp District', 'Hóc Môn District','Nhà Bè District', 'Phú Nhuận District', 
-                    'Thủ Đức District', 'Tân Bình District', 'Tân Phú District']
+    if type == 'For sale':
+
+        district_list = ['District 1',
+                        'District 10', 'District 11', 'District 12', 'District 2', 'District 3',
+                        'District 4', 'District 5', 'District 6', 'District 7', 'District 8',
+                        'District 9', 'Bình Chánh District', 'Bình Thạnh District', 'Bình Tân District', 
+                        'Gò Vấp District', 'Hóc Môn District','Nhà Bè District', 'Phú Nhuận District', 
+                        'Thủ Đức District', 'Tân Bình District', 'Tân Phú District']
+    else :
+
+         district_list = ['District 1',
+                        'District 10', 'District 11', 'District 12', 'District 2', 'District 3',
+                        'District 4', 'District 5', 'District 6', 'District 7', 'District 8',
+                        'District 9', 'Bình Chánh District', 'Bình Thạnh District', 'Bình Tân District', 'Củ Chi District',
+                        'Gò Vấp District', 'Hóc Môn District','Nhà Bè District', 'Phú Nhuận District', 
+                        'Thủ Đức District', 'Tân Bình District', 'Tân Phú District']
+
     
     selected_district = st.selectbox("**District**", tuple(district_list))
     area = st.slider('**Area(m2)**', 20, 250)
@@ -49,7 +60,6 @@ def main():
         if type == 'For sale':
             st.text('Predict price of apartment for sale')
             predictor = ApartmentPricePredictor('decision_tree_model_for_sale.sav')
-
             price = predictor.predict_for_sale(df.values)
 
             if price[0] < 0:
@@ -67,7 +77,6 @@ def main():
             else:
                 st.text("The predicted price for the apartment is {:,} (VND)".format(np.round(price[0], 2)*1000000))
        
-
 
 if __name__ == "__main__":
     main()
