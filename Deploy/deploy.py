@@ -44,11 +44,13 @@ def main():
 
     df = pd.DataFrame(input_data)
 
-    predictor = ApartmentPricePredictor('decision_tree_model_for_sale.sav')
+    
 
     if st.button('**Predict Price**'):
         if type == 'For sale':
             st.text('Predict price of apartment for sale')
+            predictor = ApartmentPricePredictor('decision_tree_model_for_sale.sav')
+            
             price = predictor.predict_for_sale(df.values)
 
             if price[0] < 0:
