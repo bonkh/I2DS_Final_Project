@@ -1,6 +1,8 @@
 # Ho Chi Minh City Rental and Selling Real Estate Analysis 
 Final project for Introduction to Data Science course - HCMUS 2023. 
 
+*Note: Project was completed before the change in administrative geography in 2025 (which still contain district level)* 
+
 | ID | Member | Section |
 |----|---------|--------|
 | 21120275 | Huynh Cao Khoi | Selling real estate (Part 1) |
@@ -19,10 +21,10 @@ The following technologies are used in the project:
 - `streamlit`: Deployment for real estate cost prediction web service
 
 ## 3. Results 
-We found that there are a great variation of cost between the **type** and **location** of a property. (We also need to emphasise that the data is collect from 1 website, which could introduce great bias).
+We found that there are a great variation of cost between the **type** and **location** of a property. (We also need to emphasise that the data is collect from 1 website at 1 period of time (the end months of 2023), which could introduce great bias).
 
 ### Rental properties 
-- The 
+- Rental real estate divides into living and commercial types: apartments dominate Districts 2 and 7, rented rooms in Tân Bình and Bình Thạnh; warehouses appear in suburban areas (Bình Tân, District 2), while offices and front-houses cluster in central districts (1, 2, 3). 
 
 
 ### Selling properties  
