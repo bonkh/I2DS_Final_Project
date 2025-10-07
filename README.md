@@ -20,7 +20,7 @@ The following technologies are used in the project:
 - `scikit-learn`: Build and train ML models
 - `streamlit`: Deployment for real estate cost prediction web service
 
-## 3. Results 
+## 3. Analysis results 
 We found that there are a great variation of cost between the **type** and **location** of a property. (We also need to emphasise that the data is collect from 1 website at 1 period of time (the end months of 2023), which could introduce great bias). This is a summaries of our finding. 
 
 ![Ho Chi Minh City's District Map](ho-chi-minh-city-maps.jpg)  
@@ -32,6 +32,12 @@ We found that there are a great variation of cost between the **type** and **loc
 - Each district has distinct rental patterns. For example: District 1 linked to `street-front` and `rental rooms`, District 2 to `apartments`, `shophouses`, and `private houses`, and District 3 to `street-front houses`.
 
 ### Selling properties  
+
+## 4. ML Building Results 
+### Method 
+- We use `GridSearchCV` to search for the best models and corresponding parameters. The following models are considered: `Linear Regression`, `Ridge Regression`, `Lasso Regression`, `ElasticNet Regression`, `DTree Regression` and `Random Forest`.
+- **Rental Prediction**: Best model is `Lasso Regression` with alpha 0.1. 
+  
 
 
 
