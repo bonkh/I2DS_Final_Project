@@ -24,6 +24,7 @@ The following technologies are used in the project:
 We found that there are a great variation of cost between the **type** and **location** of a property. (We also need to emphasise that the data is collect from 1 website at 1 period of time (the end months of 2023), which could introduce great bias). This is a summaries of our finding. 
 
 ![Ho Chi Minh City's District Map](ho-chi-minh-city-maps.jpg)
+*Source: khudothi.vn*
 
 ### Rental properties 
 - Rental real estate divides into living and commercial types: `apartments` dominate Districts 2 and 7, `rented rooms` in Tân Bình and Bình Thạnh; `warehouses` appear in suburban areas (Bình Tân, District 2), while `offices` and `front-houses` cluster in central districts (1, 2, 3).
