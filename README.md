@@ -21,11 +21,12 @@ The following technologies are used in the project:
 - `streamlit`: Deployment for real estate cost prediction web service
 
 ## 3. Results 
-We found that there are a great variation of cost between the **type** and **location** of a property. (We also need to emphasise that the data is collect from 1 website at 1 period of time (the end months of 2023), which could introduce great bias).
+We found that there are a great variation of cost between the **type** and **location** of a property. (We also need to emphasise that the data is collect from 1 website at 1 period of time (the end months of 2023), which could introduce great bias). This is a summaries of our finding. 
 
 ### Rental properties 
-- Rental real estate divides into living and commercial types: apartments dominate Districts 2 and 7, rented rooms in Tân Bình and Bình Thạnh; warehouses appear in suburban areas (Bình Tân, District 2), while offices and front-houses cluster in central districts (1, 2, 3). 
-
+- Rental real estate divides into living and commercial types: apartments dominate Districts 2 and 7, rented rooms in Tân Bình and Bình Thạnh; warehouses appear in suburban areas (Bình Tân, District 2), while offices and front-houses cluster in central districts (1, 2, 3).
+- Cost of a property fluctuate a lot depends on location (demand for that type of property) and quality of the property (area is important to comercial type, while living amenities is important to living type). To take an example, apartment flats are most popular and most expensive in District 2 and 1 (central area) and cheapest in District 9 and Hóc Môn District (~ country side area).
+- Each district has distinct rental patterns. For example: District 1 linked to street-front and rental rooms, District 2 to apartments, shophouses, and private houses, and District 3 to street-front houses.
 
 ### Selling properties  
 
