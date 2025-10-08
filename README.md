@@ -16,7 +16,7 @@ The following technologies are used in the project:
 - `cloudscraper`: Light-weight library for web scraping
 - `pandas`: Dataframe manipulation for data cleaning and processing
 - `numpy`: Array manipulation for basic statistics analysis
-- `matplotlib`: Data visualization
+- `matplotlib`, `plotly`: Data visualization
 - `scikit-learn`: Build and train ML models
 - `streamlit`: Deployment for real estate cost prediction web service
 
@@ -32,16 +32,21 @@ We found that there are a great variation of cost between the **type** and **loc
 - Each district has distinct rental patterns. For example: District 1 linked to `street-front` and `rental rooms`, District 2 to `apartments`, `shophouses`, and `private houses`, and District 3 to `street-front houses`.
 
 ### Selling properties  
+- Selling real estate has a varied distribution across types and locations. The most common types are `personal houses` and `street-front houses`, which appear in most of districts. `Apartments` are concentrated in the central districts such as `District 1`, `District 2`, `Disrict 4`, `Bình Thạnh`, `Bình Tân`. Another significant type of real estate for sale is `lands`, which are mainly found in larger and more distant district like `Cần Giờ`, `Củ Chi` and `Tân Phú`.
+- The price of the real estate depends on its type. The most expensive types are `villas` and `street-front houses`, followed by `lands`, `personal houses` and `apartments`. In each type, the prices also vary by the location: In more expensive district like `District 1` or `District 2`, prices are higher compared to outer district like `District 12` or `Thủ Đức`.
+## 4. ML Building Results
+### Objective
+We want to build a machine learning model to predict the selling and rental apartment price, using the collected features.
 
-## 4. ML Building Results 
 ### Method 
 - We use `GridSearchCV` to search for the best models and corresponding parameters. The following models are considered: `Linear Regression`, `Ridge Regression`, `Lasso Regression`, `ElasticNet Regression`, `DTree Regression` and `Random Forest`.
 - **Rental Prediction**: Best model is `Lasso Regression` with alpha 0.1. 
   
+- **Selling Prediction**: The best mode is the `Random Forsest` model, but considering the inference time, we use the `Desicion Tree` model for deployment.
 
-
-
+## 5. Model deployment:
+- We deployed the best model using a Streamlit app [here]:(https://i2ds-finalproject.streamlit.app/)
+- After inputing all the neccessary features, the app will display the predicted price as shown below:
+![Our app demo](ho-chi-minh-city-maps.jpg)  
 
 Work management resource: [Notion](https://hickory-adasaurus-926.notion.site/IDS-Team-8a6f7c93f2834c759af4f77fdad9f2ef?pvs=74).
-
-Demo of my team deployed model: [DEMO](https://i2ds-finalproject.streamlit.app/)
