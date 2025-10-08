@@ -47,6 +47,6 @@ We want to build a machine learning model to predict the selling and rental apar
 ## 5. Model deployment:
 - We deployed the best model using a Streamlit app [here]:(https://i2ds-finalproject.streamlit.app/)
 - After inputing all the neccessary features, the app will display the predicted price as shown below:
-![Our app demo](ho-chi-minh-city-maps.jpg)  
+![Our app demo](app_demo.png)  
 
 Work management resource: [Notion](https://hickory-adasaurus-926.notion.site/IDS-Team-8a6f7c93f2834c759af4f77fdad9f2ef?pvs=74).
