@@ -45,7 +45,7 @@ We want to build a machine learning model to predict the selling and rental apar
 - **Selling Prediction**: The best mode is the `Random Forsest` model, but considering the inference time, we use the `Desicion Tree` model for deployment.
 
 ## 5. Model deployment:
-- We deployed the best model using a Streamlit app [here]:(https://i2ds-finalproject.streamlit.app/)
+- We deployed the best model using a Streamlit app [here.](https://i2ds-finalproject.streamlit.app/)
 - After inputing all the neccessary features, the app will display the predicted price as shown below:
 ![Our app demo](app_demo.png)  
 
